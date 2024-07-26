@@ -3,7 +3,17 @@ import time
 
 while True:
     os.system("clear")
-    secim = input("1-) Tren gecişi\n2-) Şömine\n3-) ASCII nickname\n4-) Matrix ekranı\n5-) Sistem bilgilerini gösterir\n6-) Metni sese çevirme\n7-) Speedtest\n8-) Araba oyunu\nbir numara seçiniz: ")
+    secim = input(
+        "1-) Tren geçişi\n"
+        "2-) Şömine\n"
+        "3-) ASCII nickname\n"
+        "4-) Matrix ekranı\n"
+        "5-) Sistem bilgilerini gösterir\n"
+        "6-) Metni sese çevirme\n"
+        "7-) Speedtest\n"
+        "8-) Araba oyunu\n"
+        "Bir numara seçiniz: "
+    )
 
     if secim == "1":
         os.system("pkg install sl -y")
@@ -14,7 +24,7 @@ while True:
         os.system("cacafire")
         break
     elif secim == "3":
-	annen = input("nickname giriniz: ")
+        annen = input("Nickname giriniz: ")
         os.system("pkg install figlet -y")
         os.system(f"figlet {annen}")
         break
@@ -27,7 +37,7 @@ while True:
         os.system("neofetch")
         break
     elif secim == "6":
-        baban = input("sese çevirilecek metni giriniz: ")
+        baban = input("Sese çevrilecek metni giriniz: ")
         os.system("pkg install espeak -y")
         os.system(f'espeak "{baban}"')
         break
