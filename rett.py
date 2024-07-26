@@ -13,7 +13,8 @@ while True:
         os.system("pkg install libcaca -y")
         os.system("cacafire")
         break
-    elif secim == "3":                                                                          annen = input("nickname giriniz: ")
+    elif secim == "3":
+	annen = input("nickname giriniz: ")
         os.system("pkg install figlet -y")
         os.system(f"figlet {annen}")
         break
