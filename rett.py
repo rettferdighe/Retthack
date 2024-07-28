@@ -1,8 +1,14 @@
 import os
 import time
+import pytube
+
 
 while True:
     os.system("clear")
+    print("   ___     ___    _____   _____   _  _     ___     ___    _  __ ")
+    print("  | _ \   | __|  |_   _| |_   _| | || |   /   \   / __|  | |/ / ")
+    print("  |   /   | _|     | |     | |   | __ |   | - |  | (__   | ' <")
+    print("  |_|_\   |___|   _|_|_   _|_|_  |_||_|   |_|_|   \___|  |_|\_\ ")
     secim = input(
         "1-) Tren geçişi\n"
         "2-) Şömine\n"
@@ -12,6 +18,7 @@ while True:
         "6-) Metni sese çevirme\n"
         "7-) Speedtest\n"
         "8-) Araba oyunu\n"
+        "9-) Çeviri\n"
         "Bir numara seçiniz: "
     )
 
@@ -49,6 +56,11 @@ while True:
         os.system("pkg install moon-buggy -y")
         os.system("moon-buggy")
         break
+    elif secim == "9":
+        trans = input("çevirilecek cümleyi giriniz: ")
+        os.system("pkg install translate-shell -y ")
+        os.system(f'trans -b :tr "{trans}"')
+        break
     else:
-        print("Geçersiz bir numara girdiniz. Lütfen tekrar deneyin.")
+        print("geçersiz bir numara girdiniz. Lütfen tekrar deneyin.")
         time.sleep(2)
